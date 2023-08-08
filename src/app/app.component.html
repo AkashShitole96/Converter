@@ -1,0 +1,117 @@
+<div class="heder">
+  <br>
+  <h1 id="ak">Converter</h1>
+  <br>
+</div>
+<!-- <hr color="red">
+<hr color="red"> -->
+<div>
+  <div class="container-fluid">
+    <div class="row">
+
+    <div class="col-sm-3"  id="slidebar">
+      <div id="adj">
+
+       <br>
+       <button class="btn btn-primary btn-lg" (click)="onpound()">Kg To Pound</button>
+       <br><br><br>
+       <button class="btn btn-primary btn-lg" (click)="oncgpa()">CGPA To Percentage</button>
+       <br><br><br>
+       <button class="btn btn-primary btn-lg" (click)="onmetocm()">Meter To Centimeter</button>
+       <br><br><br>
+       <button class="btn btn-primary btn-lg" (click)="onhectare()">Hectare To Sq.Meter</button>
+       <br><br><br>
+       <button class="btn btn-primary btn-lg" (click)="onliter()">Liters To Gallons</button>
+       <br><br><br>
+       <button class="btn btn-primary btn-lg" (click)="onnewton()">Newton To Dynes</button>
+       <br><br>
+  
+      </div>
+    </div>
+  
+
+    
+    <div class="col" *ngIf="flag">
+      <br>
+      <div class="form-group">
+        <label for="">KG Value ::</label>
+        <input #kgvalue type="text" class="form-control" placeholder="Enter Kg Value">
+        <br>
+        <button class="btn btn-secondary btn-lg" (click)="onkgtopound(kgvalue.value)">Kg To Pound</button>
+        <br><br>
+        <label for="">Pound Value ::</label>
+        <input type="text" class="form-control" placeholder="Pound Value" [value]="a">
+
+        <img id="im" src="..\..\assets\kg-to-pounds.png" alt="" height="250" width="400">
+      </div>
+    </div>
+
+    <div class="col" *ngIf="cgpaflag"><br>
+      <div class="form-group">
+        <label>Enter Your CGPA ::</label>
+        <input #cgpavalue type="text" class="form-control" placeholder="CGPA">
+        <br>
+        <button class="btn btn-secondary btn-lg" (click)="oncgpatopercentage(cgpavalue.value)">CGPA To Percentage</button>
+        <br><br>
+        <label>Percentage ::</label>
+        <input type="text" class="form-control" placeholder="Percentage %" [value]="c">
+      </div>
+    </div>
+
+
+    <div class="col" *ngIf="meterflag"><br>
+      <div class="form-group">
+        <label>Enter Your Meter Value ::</label>
+        <input #metervalue type="text" class="form-control" placeholder="Meter Value ">
+        <br>
+        <button class="btn btn-secondary btn-lg" (click)="onmeteretocm(metervalue.value)">Meter To Centimeter</button>
+        <br><br>
+        <label>Centimeter Value ::</label>
+        <input type="text" class="form-control" [value]="e">
+      </div>
+    </div>
+
+
+    <div class="col" *ngIf="hectareflag"><br>
+      <div class="form-group">
+        <label>Enter Hectare Value ::</label>
+        <input #hectarevalue type="text" class="form-control" placeholder="Hectare Value ">
+        <br>
+        <button class="btn btn-secondary btn-lg" (click)="onhectaretosqmeter(hectarevalue.value)">Hectare To Sq.Meter</button>
+        <br><br>
+        <label>Sq.Meter Value ::</label>
+        <input type="text" class="form-control" [value]="g"> 
+      </div>
+    </div>
+
+    <div class="col" *ngIf="literflag"><br>
+      <div class="form-group">
+        <label>Enter Your Liter Value ::</label>
+        <input #litervalue type="text" class="form-control" placeholder="Liter Value ">
+        <br>
+        <button class="btn btn-secondary btn-lg" (click)="onlitertogallon(litervalue.value)">Liter To Gallons</button>
+        <br><br>
+        <label>Gallon Value ::</label>
+        <input type="text" class="form-control" [value]="i">
+      </div>
+    </div>
+
+
+    <div class="col" *ngIf="newtonflag"><br>
+      <div class="form-group">
+        <label>Enter Your Newton Value ::</label>
+        <input #newtonvalue type="text" class="form-control" placeholder="Newton Value ">
+        <br>
+        <button class="btn btn-secondary btn-lg" (click)="onnewtontodyen(newtonvalue.value)">Newton To Dynes</button>
+        <br><br>
+        <label>Dyne Value ::</label>
+        <input type="text" class="form-control" [value]="m">
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+
+</div>
+

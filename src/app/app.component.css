@@ -1,0 +1,29 @@
+#ak{
+    
+    color: rgb(152, 7, 224);
+    text-align: center;
+}
+
+.heder{
+    background-color: aquamarine;
+    border-radius: 2px;
+    text-decoration-style: dashed;
+}
+
+#slidebar{
+    background-color: rgb(155, 12, 12);
+    text-align: center;
+    
+}
+
+#adj{
+    margin: 5px;
+    background-color: rgb(170, 237, 183);
+}
+
+#im{
+    margin-left: 30vm;
+    margin-right: 30vm;
+    margin: 40px;
+    
+}
